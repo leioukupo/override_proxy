@@ -1,0 +1,23 @@
+{
+    "listenIp": "0.0.0.0",
+    "listenPort": 9090,
+    "targetList": [
+        {
+            "authUrl": "https://api.github.com/copilot_internal/v2/token",
+            "authToken": "gho_Fr0Xcd07iishNhaJuxOvvkwa6dzHKg2nrJeQ",
+            "type": "copilot",
+            "httpProxyAddr": "127.0.0.1:9090",
+            "codexUrl": "https://copilot-proxy.githubusercontent.com/v1/engines/copilot-codex/completions",
+            "chatUrl": "https://api.githubcopilot.com/chat/completions"
+        }
+    ],
+    "local": "zh_CN",
+    "tokenSalt": "default_salt",
+    "adminToken": "default_admin_token",
+    "copilotDebounce": 1000,
+    "defaultBaseUrl": "https://api.your.domain",
+    "apiBaseUrl": "https://api.your.domain",
+    "originTrackerBaseUrl": "https://origin-tracker.your.domain",
+    "proxyBaseUrl": "https://api.your.domain",
+    "telemetryBaseUrl": "https://copilot-telemetry-service.your.domain"
+}

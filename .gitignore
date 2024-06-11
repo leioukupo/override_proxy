@@ -4,6 +4,6 @@
 .idea
 .vscode
 *.txt
-*.json
+# *.json
 *.log
 *.db
