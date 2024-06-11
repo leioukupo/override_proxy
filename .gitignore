@@ -1,37 +1,9 @@
-# Reference https://github.com/github/gitignore/blob/master/Go.gitignore
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-
-# Test binary, built with `go test -c`
-*.test
-
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
-
-# Dependency directories (remove the comment below to include it)
-vendor/
-
-# Compiled Object files, Static and Dynamic libs (Shared Objects)
-*.o
-*.a
-*.so
-
-# OS General
-Thumbs.db
-.DS_Store
-
-# project
-*.cert
-*.key
+# https://dart.dev/guides/libraries/private-files
+# Created by `dart pub`
+.dart_tool/
+.idea
+.vscode
+*.txt
+*.json
 *.log
-bin/
-config.json
-
-# Develop tools
-.vscode/
-.idea/
-*.swp
+*.db

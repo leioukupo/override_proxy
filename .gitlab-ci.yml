@@ -1,0 +1,21 @@
+stages:
+  - build
+
+variables:
+  DART_VERSION: "3.4.1"  # 设置你需要的Dart版本
+
+build_linux:
+  stage: build
+  image: debian:buster-slim
+  before_script:
+    - apt-get update && apt-get install -y curl unzip
+    - curl -sSL https://storage.googleapis.com/dart-archive/channels/stable/release/$DART_VERSION/sdk/dartsdk-linux-x64-release.zip > dart-sdk.zip
+    - unzip dart-sdk.zip -d /usr/local
+    - export PATH="$PATH:/usr/local/dart-sdk/bin"
+    - dart --version
+  script:
+    - dart pub get
+    - dart compile exe bin/copilot_proxy.dart -o ./copilot_proxy_linux
+  artifacts:
+    paths:
+      - ./copilot_proxy_linux

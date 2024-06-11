@@ -8,13 +8,13 @@ on:
       - "*"
 
 env:
-  DOCKER_HUB_USERNAME: cursor1st
-  DOCKER_HUB_REPO: override  # Replace with your repo name
+  DOCKER_HUB_USERNAME: leioukupo
+  DOCKER_HUB_REPO: copilot_proxy  # Replace with your repo name
       
 
 jobs:
   build-and-push:
-    runs-on: ubuntu-latest
+    runs-on: debian:buster-slim
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
